@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nigeria Branding Agency</title>
+    <script>
+      // Fix for "Cannot set property fetch of #<Window> which has only a getter"
+      (function() {
+        function fixFetch(obj) {
+          try {
+            const descriptor = Object.getOwnPropertyDescriptor(obj, 'fetch');
+            if (descriptor && !descriptor.writable && !descriptor.set && descriptor.configurable) {
+              const originalFetch = obj.fetch;
+              Object.defineProperty(obj, 'fetch', {
+                get: () => originalFetch,
+                set: () => {}, // Ignore attempts to overwrite
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (e) {}
+        }
+        fixFetch(window);
+        if (typeof globalThis !== 'undefined') fixFetch(globalThis);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
