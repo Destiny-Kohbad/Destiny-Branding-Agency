@@ -56,7 +56,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass py-3' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="text-2xl font-display font-bold tracking-tight">
-          DESTINY<span className="text-amber-500">BRANDING</span>
+          NIGERIA<span className="text-amber-500">BRANDING</span>
         </a>
 
         {/* Desktop Nav */}
@@ -207,7 +207,7 @@ export default function App() {
 
   const handleWhatsAppSend = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hello Destiny Branding Agency, my name is ${formData.name}. ${formData.message}`;
+    const text = `Hello Nigeria Branding Agency, my name is ${formData.name}. ${formData.message}`;
     window.open(`https://wa.me/2349137769312?text=${encodeURIComponent(text)}`, '_blank');
   };
 
@@ -442,7 +442,7 @@ export default function App() {
             <TestimonialCard 
               name="Chidi Okafor" 
               role="CEO, Lagos Fashion Hub" 
-              content="Destiny Branding Agency transformed our online store. Our sales increased by 40% in the first month after the new website launch!" 
+              content="Nigeria Branding Agency transformed our online store. Our sales increased by 40% in the first month after the new website launch!" 
             />
             <TestimonialCard 
               name="Amina Bello" 
@@ -542,7 +542,7 @@ export default function App() {
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-2">
               <a href="#" className="text-2xl font-display font-bold tracking-tight mb-6 block">
-                DESTINY<span className="text-amber-500">BRANDING</span>
+                NIGERIA<span className="text-amber-500">BRANDING</span>
               </a>
               <p className="text-gray-400 text-lg max-w-sm mb-8">
                 Helping Nigerian businesses grow with world-class design, video, and web solutions.
@@ -587,7 +587,7 @@ export default function App() {
             </div>
           </div>
           <div className="pt-8 border-t border-white/5 text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} Destiny Branding Agency. All rights reserved. Designed by Destiny Ayeni.
+            © {new Date().getFullYear()} Nigeria Branding Agency. All rights reserved. Designed by Destiny Ayeni.
           </div>
         </div>
       </footer>
